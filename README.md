@@ -44,9 +44,9 @@ gcloud auth application-default login
 
 Let's first create a bucket called 'terraform-test' here https://my.webhookrelay.com/buckets. You can also create an output, just make sure 'internal' is chosen to route webhooks through our GCP agent:
 
+![Bucket config](https://raw.githubusercontent.com/webhookrelay/relay-tf/master/static/terraform-bucket.png)
 
-
-Then, go to the access token page here https://my.webhookrelay.com/tokens and click "Create Token".
+Then, go to the access token page here https://my.webhookrelay.com/tokens and click "Create Token". You will need these details for the terraform inputs file.
 
 Create a new `inputs.tfvars` using your favorite text editor, and put the following in it:
 
