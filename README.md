@@ -76,4 +76,4 @@ gcloud_ssh = gcloud beta compute ssh --zone us-east1-b relay-agent-vm-84b8179561
 
 ### Using it
 
-Now, if you 
+Now, if you send webhooks to your bucket's input (https://my.webhookrelay.com/v1/webhooks/...), they will be dispatched to the destination through the GCP server and therefore have "34.74.183.24" IP. This way you can whitelist webhook source or just ensure that you deploy Webhook Relay agent with terraform into an existing private network.
